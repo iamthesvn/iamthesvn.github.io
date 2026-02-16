@@ -10,12 +10,12 @@
 @theme {
 	--color-global-bg: oklch(98.48% 0 0);
 	--color-global-text: oklch(26.99% 0.0096 235.05);
-	--color-link: oklch(65% 0.2 140);
-	/* Neon Green/Cyan mixed for light mode? Keep standard or update */
-	--color-accent: oklch(60% 0.2 300);
-	/* Neon Purple */
+	--color-link: oklch(78% 0.17 70);
+	/* Bitcoin Gold */
+	--color-accent: oklch(55% 0.2 45);
+	/* Rust Orange */
 	--color-accent-2: oklch(18.15% 0 0);
-	--color-quote: oklch(60% 0.2 300);
+	--color-quote: oklch(55% 0.2 45);
 }
 
 @layer base {
@@ -33,14 +33,13 @@
 			--color-global-bg: #050510;
 			/* Deep Void Blue/Black */
 			--color-global-text: oklch(90% 0.05 260);
-			/* Slightly cool white */
-			--color-link: #00f3ff;
-			/* Neon Cyan */
-			--color-accent: #bf00ff;
-			/* Neon Purple */
-			--color-accent-2: #00f3ff;
-			/* Neon Cyan secondary */
-			--color-quote: #bf00ff;
+			--color-link: #F7931A;
+			/* Bitcoin Gold */
+			--color-accent: #b7410e;
+			/* Rust Orange */
+			--color-accent-2: #F7931A;
+			/* Bitcoin Gold Secondary */
+			--color-quote: #b7410e;
 		}
 	}
 
