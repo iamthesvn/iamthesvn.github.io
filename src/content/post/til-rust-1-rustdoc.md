@@ -1,9 +1,11 @@
 ---
-title: "TIL RUST #1: rustdoc"
+title: "TIL RUST #1"
 description: "Learning about rustdoc, its significance, and how to use it for API documentation."
 publishDate: "2026-02-16"
 tags: ["rust", "til", "rustdoc", "learning"]
 ---
+
+# `rustdoc`
 
 I hadn't tried using `rustdoc` so far, and I wanted to learn its importance via a simple program, but before that, I wanted to understand its significance. What makes it different from using `//` or `/* */`?
 
