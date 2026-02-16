@@ -7,6 +7,8 @@ import ThemeProvider from "@/components/ThemeProvider.astro";
 import { siteConfig } from "@/site.config";
 import type { SiteMeta } from "@/types";
 
+import DeepSpaceBackground from "@/components/DeepSpaceBackground.astro";
+
 interface Props {
 	meta: SiteMeta;
 }
@@ -23,6 +25,7 @@ const {
 	<body
 		class="bg-global-bg text-global-text mx-auto flex min-h-screen max-w-3xl flex-col px-4 pt-16 font-mono text-sm font-normal antialiased sm:px-8"
 	>
+		<DeepSpaceBackground />
 		<ThemeProvider />
 		<SkipLink />
 		<Header />
