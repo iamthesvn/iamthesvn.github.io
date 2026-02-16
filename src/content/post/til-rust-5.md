@@ -1,25 +1,19 @@
 ---
-title: "TIL RUST #5"
+title: "TIL RUST #5: Vectors, Traits, Invocation of rustc, and Lexing"
 description: "Vectors, Traits, Invocation of rustc, and Lexing"
 publishDate: "2025-11-11"
 tags: ["rust", "til", "vectors", "traits", "compiler"]
-coverImage:
-  src: "https://pbs.twimg.com/media/G5fAc9BbcAE-R3s?format=jpg&name=medium"
-  alt: "TIL RUST #5 Image"
 ---
-
-![Cover](https://pbs.twimg.com/media/G5fAc9BbcAE-R3s?format=jpg&name=medium)
 
 ## Vectors
 
-Vectors in Rust are essentially Rust's dynamic, growable version of arrays. While arrays in Rust are fixed-size collections determined at compile time and are typically stored on the **stack**, vectors can resize dynamically at runtime and store their data on the **heap**.
+Vectors in Rust are essentially Rust's dynamic, growable version of arrays. While arrays in Rust are fixed-size collections determined at compile time and are typically stored on the stack, vectors can resize dynamically at runtime and store their data on the heap.
 
 ## Traits
 
 Traits define the set of methods that can be called on a type. They are similar to interfaces in other languages.
 
 Example:
-
 ```rust
 pub trait Summary {
     fn summarize(&self) -> String;
@@ -58,11 +52,11 @@ impl Summary for SocialPost {
 }
 ```
 
-The example was taken from here: [https://doc.rust-lang.org/book/ch10-02-traits.html](https://doc.rust-lang.org/book/ch10-02-traits.html)
+The example was taken from here: https://doc.rust-lang.org/book/ch10-02-traits.html
 
 ## Invocation of rustc
 
-The work that the compiler needs to perform is defined by command-line options. The commands given in the CLI that are targeted towards rustc are parsed in `rustc_driver`. This crate contains the definitions of all the compilation configurations/options that can be requested by the user. 
+The work that the compiler needs to perform is defined by command-line options. The commands given in the CLI that are targeted towards `rustc` are parsed in `rustc_driver`. This crate contains the definitions of all the compilation configurations/options that can be requested by the user. 
 
 ## Lexing
 

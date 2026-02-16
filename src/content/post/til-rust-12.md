@@ -1,5 +1,5 @@
 ---
-title: "TIL RUST #12"
+title: "TIL RUST #12: if let Pattern Matching and debug_assert!"
 description: "if let Pattern Matching and debug_assert!"
 publishDate: "2025-12-21"
 tags: ["rust", "til", "if-let", "macros", "debugging"]
@@ -7,21 +7,25 @@ tags: ["rust", "til", "if-let", "macros", "debugging"]
 
 ## `if let` Pattern Matching
 
-`if let` statements provide a concise way to pattern match on enums and extract values, especially useful for `Option` types. They combine conditional checking with destructuring.
-
-Example (from Rust by Example: [https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html](https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html)):
+`if let` statements provide a concise way to pattern match on enums and extract values, especially useful for `Option` types. They combine conditional checking with destructuring in a single expression.
 
 ```rust
-fn main() {
+fn main(){
     let number = Some(7);
+
+    // if let destructures Option and binds the inner value
     if let Some(i) = number {
         println!("Matched {:?}!", i);
     }
 }
 ```
 
-Unlike full `match` statements that require handling all cases exhaustively, `if let` is ideal for single-case logic.
+- `if let Some(i) = number` destructures `Option` types. When `number` is `Some(7)`, the pattern `Some(i)` matches and binds `7` to `i`.
+- Unlike full `match` statements, `if let` only handles the cases you specify, making it ideal for concise `Option` handling.
 
 ## The `debug_assert!` macro
 
-`assert!` is always checked. `debug_assert!` is skipped in optimized builds, making it perfect for dev-time validations without production overhead.
+Unlike in C++, Rust's `assert!` macro is always checked. However, we can use the `debug_assert!` macro for assertions that are skipped in optimized builds.
+
+- Use `assert!` for uncompromisable safety nets (e.g., bounds in unsafe blocks).
+- Opt for `debug_assert!` for developer-time validations.
