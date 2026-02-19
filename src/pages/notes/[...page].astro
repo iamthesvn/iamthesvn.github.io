@@ -1,9 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import type { GetStaticPaths, Page } from "astro";
-import { Icon } from "astro-icon/components";
-import Note from "@/components/note/Note.astro";
-import Pagination from "@/components/Paginator.astro";
 import PageLayout from "@/layouts/Base.astro";
 import { collectionDateSort } from "@/utils/date";
 
@@ -18,26 +15,9 @@ interface Props {
 	uniqueTags: string[];
 }
 
-const { page } = Astro.props;
-
 const meta = {
 	description: "Read my collection of notes",
 	title: "Notes",
-};
-
-const paginationProps = {
-	...(page.url.prev && {
-		prevUrl: {
-			text: "← Previous Page",
-			url: page.url.prev,
-		},
-	}),
-	...(page.url.next && {
-		nextUrl: {
-			text: "Next Page →",
-			url: page.url.next,
-		},
-	}),
 };
 ---
 
