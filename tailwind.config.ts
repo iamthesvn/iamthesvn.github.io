@@ -4,6 +4,10 @@ export default {
 	plugins: [require("@tailwindcss/typography")],
 	theme: {
 		extend: {
+			fontFamily: {
+				serif: ["Cinzel", "serif"],
+				body: ["Lora", "serif"],
+			},
 			typography: () => ({
 				DEFAULT: {
 					css: {
@@ -15,6 +19,9 @@ export default {
 									textDecorationThickness: "2px",
 								},
 							},
+						},
+						"h1, h2, h3, h4, h5, h6": {
+							fontFamily: "Cinzel, serif",
 						},
 						blockquote: {
 							borderLeftWidth: "0",

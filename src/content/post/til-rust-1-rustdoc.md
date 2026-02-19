@@ -5,7 +5,7 @@ publishDate: "2025-11-07"
 tags: ["rust", "til", "rustdoc", "learning"]
 ---
 
-# `rustdoc`
+## `rustdoc`
 
 I hadn't tried using `rustdoc` so far, and I wanted to learn its importance via a simple program, but before that, I wanted to understand its significance. What makes it different from using `//` or `/* */`?
 

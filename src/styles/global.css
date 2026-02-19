@@ -8,19 +8,23 @@
 
 /* you could refactor below to use light-dark(), depending on your target audience */
 @theme {
-	--color-global-bg: oklch(98.48% 0 0);
-	--color-global-text: oklch(26.99% 0.0096 235.05);
-	--color-link: oklch(78% 0.17 70);
-	/* Bitcoin Gold */
-	--color-accent: oklch(55% 0.2 45);
-	/* Rust Orange */
-	--color-accent-2: oklch(18.15% 0 0);
-	--color-quote: oklch(55% 0.2 45);
+	/* Warm Marble */
+	--color-global-bg: #fdfcf5;
+	/* Dark Stone */
+	--color-global-text: #2a2a2a;
+	/* Antique Gold */
+	--color-link: #c5a059;
+	/* Antique Gold */
+	--color-accent: #c5a059;
+	/* Deep Stone */
+	--color-accent-2: #1c1c1c;
+	--color-quote: #c5a059;
 }
 
 @layer base {
 	html {
 		color-scheme: light dark;
+		background-color: var(--color-global-bg);
 		accent-color: var(--color-accent);
 		scrollbar-gutter: stable;
 
@@ -30,16 +34,19 @@
 
 		&[data-theme="dark"] {
 			color-scheme: dark;
-			--color-global-bg: #050510;
-			/* Deep Void Blue/Black */
-			--color-global-text: oklch(90% 0.05 260);
-			--color-link: #F7931A;
-			/* Bitcoin Gold */
-			--color-accent: #b7410e;
-			/* Rust Orange */
-			--color-accent-2: #F7931A;
-			/* Bitcoin Gold Secondary */
-			--color-quote: #b7410e;
+			/* Dark Stone */
+			--color-global-bg: #111111;
+			/* Even darker stone for contrast */
+			/* Pale Gold-White */
+			--color-global-text: #f2ecdd;
+			/* Bright Gold */
+			--color-link: #d4af37;
+			/* Antique Gold */
+			--color-accent: #c5a059;
+			/* Pale Marble */
+			--color-accent-2: #fdfcf5;
+			/* Bright Gold */
+			--color-quote: #d4af37;
 		}
 	}
 
@@ -75,7 +82,16 @@
 	}
 
 	.title {
-		@apply text-accent-2 text-2xl font-semibold;
+		@apply text-accent-2 text-2xl font-semibold font-serif;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-serif;
 	}
 }
 

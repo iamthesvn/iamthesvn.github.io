@@ -18,14 +18,14 @@ const socialLinks: {
 		name: "mdi:github",
 	},
 	{
-		friendlyName: "Lightning",
-		link: "/",
-		name: "mdi:flash",
+		friendlyName: "X",
+		link: "https://x.com/iamthesvn",
+		name: "simple-icons:x",
 	},
 	{
-		friendlyName: "Pubkey",
-		link: "/",
-		name: "mdi:key-variant",
+		friendlyName: "Nostr",
+		link: "https://primal.net/p/nprofile1qqsy0hjvmvl0g6zglmvqufmcwddtf6dvfw6scfrasgc9m56fhaywf0qdg6ae5",
+		name: "nostr",
 	},
 ];
 ---
@@ -42,7 +42,12 @@ const socialLinks: {
 						rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
 						target="_blank"
 					>
-						<Icon aria-hidden="true" class="h-8 w-8" focusable="false" name={name} />
+						<Icon
+							aria-hidden="true"
+							class={`inline-block ${name === "simple-icons:x" ? "h-6 w-6" : "h-8 w-8"}`}
+							focusable="false"
+							name={name}
+						/>
 						<span class="sr-only">{friendlyName}</span>
 					</a>
 				</li>

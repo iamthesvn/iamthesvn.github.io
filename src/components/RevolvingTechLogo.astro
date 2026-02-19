@@ -2,43 +2,6 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<div class="relative flex h-20 w-20 items-center justify-center">
-	<!-- Central Nucleus -->
-	<div class="text-accent absolute z-10 animate-pulse">
-		<Icon name="mdi:application-brackets" class="h-8 w-8" />
-	</div>
-
-	<!-- Orbit Ring 1 (Bitcoin) -->
-	<div class="border-accent/40 absolute h-12 w-12 rounded-full border border-dashed animate-spin-slow">
-		<div class="bg-global-bg absolute -top-2 left-1/2 -translate-x-1/2 rounded-full p-0.5">
-			<Icon name="mdi:bitcoin" class="text-accent h-4 w-4" />
-		</div>
-	</div>
-
-	<!-- Orbit Ring 2 (Lightning) -->
-	<div
-		class="border-link/40 absolute h-16 w-16 rounded-full border border-dashed animate-reverse-spin-slower"
-	>
-		<div class="bg-global-bg absolute -bottom-2 left-1/2 -translate-x-1/2 rounded-full p-0.5">
-			<Icon name="mdi:flash" class="text-link h-4 w-4" />
-		</div>
-	</div>
+<div class="flex items-center justify-center">
+	<Icon name="mdi:console-line" class="text-accent h-10 w-10" />
 </div>
-
-<style>
-	.animate-spin-slow {
-		animation: spin 8s linear infinite;
-	}
-	.animate-reverse-spin-slower {
-		animation: spin 12s linear infinite reverse;
-	}
-
-	@keyframes spin {
-		from {
-			transform: rotate(0deg);
-		}
-		to {
-			transform: rotate(360deg);
-		}
-	}
-</style>
