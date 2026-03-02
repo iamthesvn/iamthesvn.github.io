@@ -2,7 +2,7 @@
 title: "TIL RUST #7: Understanding String vs &str in Rust"
 description: "Understanding String vs &str in Rust"
 publishDate: "2025-11-13"
-tags: ["rust", "til", "string", "ownership", "borrowing"]
+tags: ["rust"]
 ---
 
 ## Understanding `String` vs `&str` in Rust

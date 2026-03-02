@@ -2,7 +2,7 @@
 title: "TIL RUST #2: Running the main source file of a package and other files in src/bin"
 description: "Running the main source file of a package and other files in src/bin"
 publishDate: "2025-11-08"
-tags: ["rust", "til", "cargo", "learning"]
+tags: ["rust"]
 ---
 
 ## Running the main source file of a package and other files in src/bin

@@ -2,7 +2,7 @@
 title: "TIL RUST #1"
 description: "Learning about rustdoc, its significance, and how to use it for API documentation."
 publishDate: "2025-11-07"
-tags: ["rust", "til", "rustdoc", "learning"]
+tags: ["rust"]
 ---
 
 ## `rustdoc`

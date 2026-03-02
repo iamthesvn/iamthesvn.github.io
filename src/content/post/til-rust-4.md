@@ -2,7 +2,7 @@
 title: "TIL RUST #4: Scalar and Compound types"
 description: "Scalar and Compound types in Rust"
 publishDate: "2025-11-10"
-tags: ["rust", "til", "types", "basic"]
+tags: ["rust"]
 ---
 
 ## Scalar and Compound types

@@ -2,7 +2,7 @@
 title: "TIL RUST #11: The @ Operator, Exhaustiveness checking, and Guard Clauses"
 description: "The @ Operator, Exhaustiveness checking, and Guard Clauses"
 publishDate: "2025-12-20"
-tags: ["rust", "til", "match", "patterns", "flow-control"]
+tags: ["rust"]
 ---
 
 ## The @ Operator

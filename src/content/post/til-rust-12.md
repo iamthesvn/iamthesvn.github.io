@@ -2,7 +2,7 @@
 title: "TIL RUST #12: if let Pattern Matching and debug_assert!"
 description: "if let Pattern Matching and debug_assert!"
 publishDate: "2025-12-21"
-tags: ["rust", "til", "if-let", "macros", "debugging"]
+tags: ["rust"]
 ---
 
 ## `if let` Pattern Matching

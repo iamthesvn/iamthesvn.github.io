@@ -2,7 +2,7 @@
 title: "TIL RUST #3: The Rust compiler converts source code into IR"
 description: "The Rust compiler converts source code into IR"
 publishDate: "2025-11-10"
-tags: ["rust", "til", "compiler", "ir"]
+tags: ["rust"]
 ---
 
 ## The Rust compiler converts source code into IR

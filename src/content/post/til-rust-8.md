@@ -2,7 +2,7 @@
 title: "TIL RUST #8: Closures in Rust"
 description: "Closures in Rust"
 publishDate: "2025-11-15"
-tags: ["rust", "til", "closures", "learning"]
+tags: ["rust"]
 ---
 
 ## Closures in Rust

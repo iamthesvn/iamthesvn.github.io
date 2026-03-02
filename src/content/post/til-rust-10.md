@@ -2,7 +2,7 @@
 title: "TIL RUST #10: Understanding references, mutability, and pattern matching"
 description: "Understanding references, mutability, and pattern matching"
 publishDate: "2025-12-16"
-tags: ["rust", "til", "patterns", "references", "mutability"]
+tags: ["rust"]
 ---
 
 Understanding references and mutability is crucial when pattern matching in Rust. For some context, I took the following notes while practicing this example: https://doc.rust-lang.org/rust-by-example/flow_control/match/destructuring/destructure_pointers.html

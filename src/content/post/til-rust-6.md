@@ -2,7 +2,7 @@
 title: "TIL RUST #6: Difference between a library and an executable"
 description: "Difference between a library and an executable"
 publishDate: "2025-11-12"
-tags: ["rust", "til", "crates", "modules", "library"]
+tags: ["rust"]
 ---
 
 ## Difference between a library and an executable

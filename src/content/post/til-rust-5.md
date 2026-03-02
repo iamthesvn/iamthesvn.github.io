@@ -2,7 +2,7 @@
 title: "TIL RUST #5: Vectors, Traits, Invocation of rustc, and Lexing"
 description: "Vectors, Traits, Invocation of rustc, and Lexing"
 publishDate: "2025-11-11"
-tags: ["rust", "til", "vectors", "traits", "compiler"]
+tags: ["rust"]
 ---
 
 ## Vectors

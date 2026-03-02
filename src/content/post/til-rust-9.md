@@ -2,7 +2,7 @@
 title: "TIL RUST #9: stdout vs stderr, Decoding the Panic, and Stack vs Heap"
 description: "stdout vs stderr, Decoding Panic, and Stack vs Heap"
 publishDate: "2025-12-01"
-tags: ["rust", "til", "io", "memory", "panic"]
+tags: ["rust"]
 ---
 
 ## `stdout` vs `stderr` 
