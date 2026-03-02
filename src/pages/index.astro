@@ -1,19 +1,45 @@
 ---
+import { getAllPosts } from "@/data/post";
 import PageLayout from "@/layouts/Base.astro";
+import PostPreview from "@/components/blog/PostPreview.astro";
 import SocialList from "@/components/SocialList.astro";
+import { collectionDateSort } from "@/utils/date";
 
 const meta = {
-	description: "My personal website",
+	description: "iamthesvn — writing code for a sovereign future. mostly rust & bitcoin.",
 	title: "Home",
 };
+
+const MAX_POSTS = 5;
+const allPosts = await getAllPosts();
+const recentPosts = allPosts.sort(collectionDateSort).slice(0, MAX_POSTS);
 ---
 
 <PageLayout meta={meta}>
-	<section>
-		<h1 class="title mb-6">Build in progress</h1>
-		<p class="mb-4">
-			My website is currently under construction. Check back soon!
+	<section class="mb-10">
+		<h1 class="title mb-4">iamthesvn</h1>
+		<p class="mb-2 text-base">
+			just a human tinkering with magic internet money and computers.
+		</p>
+		<p class="mb-6 text-base">
+			writing code for a sovereign future. mostly rust &amp; bitcoin.
 		</p>
 		<SocialList />
+	</section>
+
+	<section>
+		<h2 class="title mb-6 text-xl">Recent Posts</h2>
+		<ul class="space-y-4" role="list">
+			{
+				recentPosts.map((post) => (
+					<li class="grid gap-1 sm:grid-cols-[auto_1fr]">
+						<PostPreview post={post} />
+					</li>
+				))
+			}
+		</ul>
+		<a class="cactus-link mt-6 inline-block" href="/posts/">
+			All posts <span aria-hidden="true">→</span>
+		</a>
 	</section>
 </PageLayout>
